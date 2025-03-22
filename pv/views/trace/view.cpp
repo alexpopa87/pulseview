@@ -1996,7 +1996,7 @@ void View::capture_state_updated(int state)
 	GlobalSettings settings;
 
 	if (state == Session::Running) {
-		set_time_unit(util::TimeUnit::Samples);
+		set_time_unit(util::TimeUnit::Time);
 
 		trigger_markers_.clear();
 		if (!custom_zero_offset_set_)
