@@ -523,6 +523,7 @@ void MainWindow::setup_ui()
 	run_stop_button_->setAutoRaise(true);
 	run_stop_button_->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 	run_stop_button_->setToolTip(tr("Start/Stop Acquisition"));
+	run_stop_button_->setMinimumSize(QSize(40, 0));
 
 	run_stop_shortcut_ = new QShortcut(QKeySequence(Qt::Key_Space), run_stop_button_, SLOT(click()));
 	run_stop_shortcut_->setAutoRepeat(false);
